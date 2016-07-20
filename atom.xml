@@ -4,7 +4,7 @@
   <title><![CDATA[HackingDocs]]></title>
   <link href="http://docs.hackinglab.cn/atom.xml" rel="self"/>
   <link href="http://docs.hackinglab.cn/"/>
-  <updated>2015-08-04T14:47:34+08:00</updated>
+  <updated>2016-07-20T11:13:45+08:00</updated>
   <id>http://docs.hackinglab.cn/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -12,6 +12,98 @@
   </author>
   <generator uri="http://www.219.me/">CoderForArt</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[HawkEye Basic Api 使用说明]]></title>
+    <link href="http://docs.hackinglab.cn/HawkEyeBasicApi.html"/>
+    <updated>2016-07-20T10:18:31+08:00</updated>
+    <id>http://docs.hackinglab.cn/HawkEyeBasicApi.html</id>
+    <content type="html"><![CDATA[
+<p>HawkEye 基础Api使用说明</p>
+
+<h1 id="toc_0">目标定位</h1>
+
+<p>HawkEye 基础Api为方便快捷的使用而设计，可以通过基础Api快速获取系统的日志信息。</p>
+
+<h1 id="toc_1">使用说明</h1>
+
+<h2 id="toc_2">APIURL</h2>
+
+<p><a href="http://hawkeye.hackinglab.cn/HawkApiBasic.php">http://hawkeye.hackinglab.cn/HawkApiBasic.php</a></p>
+
+<h2 id="toc_3">参数说明</h2>
+
+<table>
+<thead>
+<tr>
+<th>传入参数</th>
+<th style="text-align: center">参数说明</th>
+<th style="text-align: right">是否必选</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>ak</td>
+<td style="text-align: center">ApiKey</td>
+<td style="text-align: right">Y</td>
+</tr>
+<tr>
+<td>type</td>
+<td style="text-align: center">查询类型(WEB/DNS)</td>
+<td style="text-align: right">Y</td>
+</tr>
+<tr>
+<td>num</td>
+<td style="text-align: center">每次返回的数量，最大500，默认返回10条</td>
+<td style="text-align: right">N</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="toc_4">返回值说明</h2>
+
+<p><strong>通用说明</strong><br/>
+type字段返回当前查询的类型<br/>
+url字段返回用户的基础域名<br/>
+data字段返回相应的信息</p>
+
+<p><strong>WEB</strong><br/>
+DATA <br/>
+path字段返回访问路径<br/>
+data字段返回post数据<br/>
+返回顺序为最新收到的优先</p>
+
+<pre><code class="language-JSON">{&quot;type&quot;:&quot;WEB&quot;,&quot;URL&quot;:&quot;userdomain.xxx.com&quot;,&quot;DATA&quot;:[{&quot;path&quot;:&quot;\/&quot;,&quot;data&quot;:&quot;&quot;},{&quot;path&quot;:&quot;\/robots.txt&quot;,&quot;data&quot;:&quot;&quot;}]}
+</code></pre>
+
+<p><strong>DNS</strong><br/>
+DATA<br/>
+返回顺序为最新收到的优先</p>
+
+<pre><code class="language-JSON">{&quot;type&quot;:&quot;DNS&quot;,&quot;URL&quot;:&quot;userdomain.xxx.xxx.com&quot;,&quot;DATA&quot;:[&quot;userdomain.xxx.xxx.com.&quot;,&quot;Linux.userdomain..xxx.xxx.com&quot;]}
+</code></pre>
+
+<h2 id="toc_5">异常返回</h2>
+
+<table>
+<thead>
+<tr>
+<th>异常返回</th>
+<th style="text-align: center">说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>error</td>
+<td style="text-align: center">发生异常，建议重新生成apikey</td>
+</tr>
+</tbody>
+</table>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[HawkEye Log/Dns 在Sql注入中的应用]]></title>
